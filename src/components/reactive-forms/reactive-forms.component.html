@@ -1,0 +1,35 @@
+<form id="student-form" [formGroup]="studentForm">
+  <div class="student-form_input">
+    <span>Name</span>
+    <input formControlName="name" />
+    <small *ngIf="validateStudentFormRequired('name')" class="error"
+      >Required Error</small
+    >
+  </div>
+  <div class="student-form_input">
+    <span>Age</span>
+    <input formControlName="age" />
+    <small *ngIf="validateStudentFormRequired('age')" class="error"
+      >Required Error</small
+    >
+    <small *ngIf="validateStudentFormPattern('age')" class="error"
+      >Pattern Error</small
+    >
+  </div>
+  <div class="student-form_input">
+    <span>Grade</span>
+    <input formControlName="grade" />
+    <small *ngIf="validateStudentFormPattern('grade')" class="error"
+      >Pattern Error</small
+    >
+  </div>
+  <div class="student-form_input">
+    <span>Email</span>
+    <input formControlName="email" />
+    <small *ngIf="validateStudentFormPattern('email')" class="error"
+      >Pattern Error</small
+    >
+  </div>
+
+  <button (click)="onStudentFormSubmit($event)">Submit Details</button>
+</form>

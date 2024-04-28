@@ -1,0 +1,14 @@
+#student-form {
+  width: 500px;
+
+  > .student-form_input {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr;
+
+    > .error {
+      padding-left: 0.5rem;
+      color: red;
+    }
+  }
+}
