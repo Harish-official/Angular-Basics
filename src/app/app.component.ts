@@ -11,5 +11,5 @@ import { AnalogClockComponent } from '../components/analog-clock/analog-clock.co
   imports: [RouterOutlet, ReactiveFormsComponent, AnalogClockComponent],
 })
 export class AppComponent {
-  title = 'angular-17-app';
+  title = 'Angular 17 App';
 }
