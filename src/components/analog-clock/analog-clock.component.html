@@ -1,0 +1,22 @@
+<div id="clock-container">
+  <!-- Seconds -->
+  <span
+    id="hand-second"
+    class="hand position-center"
+    [ngStyle]="{ '--second': time.second + 'deg' }"
+  ></span>
+  <!-- Minute Hand -->
+  <span
+    id="hand-minute"
+    class="hand position-center"
+    [ngStyle]="{ '--minute': time.minute + 'deg' }"
+  ></span>
+  <!-- Hour Hand -->
+  <span
+    id="hand-hour"
+    class="hand position-center"
+    [ngStyle]="{ '--hour': time.hour + 'deg' }"
+  ></span>
+  <!-- Clock Center -->
+  <span id="clock-center" class="position-center"></span>
+</div>
